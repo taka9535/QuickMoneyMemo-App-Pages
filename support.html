@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート - Quick Money Memo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p,
+        .card ul {
+            margin-bottom: 1rem;
+        }
+
+        .card ul {
+            margin-left: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            background: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>サポート</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="terms.html">利用規約</a></li>
+            <li><a href="support.html">サポート</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>よくある質問（FAQ）</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. データのバックアップはできますか？</div>
+                <div class="faq-answer">A. 現在、データはデバイス内にローカル保存されます。iCloudバックアップを有効にしている場合、アプリデータも自動的にバックアップされます。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. プレミアム機能にはどのようなものがありますか？</div>
+                <div class="faq-answer">A. プレミアム機能には以下が含まれます：
+                    <ul style="margin-top: 0.5rem;">
+                        <li>広告の非表示</li>
+                        <li>無制限のタグ作成（無料版は5つまで）</li>
+                        <li>Face ID/Touch IDによるアプリロック機能</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. サブスクリプションのキャンセル方法は？</div>
+                <div class="faq-answer">A. iPhoneの「設定」→「Apple ID」→「サブスクリプション」から、Quick Money Memoを選択してキャンセルできます。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 複数のデバイスで同期できますか？</div>
+                <div class="faq-answer">A. 現在、デバイス間の同期機能は提供していません。データは各デバイスにローカル保存されます。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 対応している通貨は？</div>
+                <div class="faq-answer">A. 以下の通貨に対応しています：
+                    <ul style="margin-top: 0.5rem;">
+                        <li>日本円 (JPY)</li>
+                        <li>米ドル (USD)</li>
+                        <li>ユーロ (EUR)</li>
+                        <li>英ポンド (GBP)</li>
+                        <li>中国元 (CNY)</li>
+                        <li>韓国ウォン (KRW)</li>
+                        <li>インドルピー (INR)</li>
+                        <li>カナダドル (CAD)</li>
+                        <li>オーストラリアドル (AUD)</li>
+                        <li>台湾ドル (TWD)</li>
+                        <li>香港ドル (HKD)</li>
+                        <li>シンガポールドル (SGD)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. データを削除したい場合は？</div>
+                <div class="faq-answer">A. アプリをアンインストールすることで、すべてのデータが削除されます。アプリ内でデータを削除する機能は現在提供していません。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. アプリが起動しない・クラッシュする</div>
+                <div class="faq-answer">A. 以下の手順をお試しください：
+                    <ul style="margin-top: 0.5rem;">
+                        <li>アプリを完全に終了して再起動</li>
+                        <li>デバイスを再起動</li>
+                        <li>App Storeでアプリの最新版を確認</li>
+                        <li>iOSを最新版にアップデート</li>
+                    </ul>
+                    それでも解決しない場合は、下記のお問い合わせ先までご連絡ください。
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>お問い合わせ</h2>
+            <p>上記のFAQで解決しない場合や、その他のご質問がある場合は、以下の方法でお問い合わせください。</p>
+
+            <div class="contact-box">
+                <h3 style="margin-top: 0;">メールでのお問い合わせ</h3>
+                <p style="margin-bottom: 0.5rem;">お問い合わせの際は、以下の情報を含めていただけるとスムーズです：</p>
+                <ul>
+                    <li>お使いのデバイス（例: iPhone 14 Pro）</li>
+                    <li>iOSバージョン（例: iOS 17.0）</li>
+                    <li>アプリバージョン（設定画面で確認できます）</li>
+                    <li>問題の詳細や再現手順</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>メールアドレス:</strong> <a href="mailto:support@example.com"
+                        style="color: #667eea;">support@example.com</a></p>
+            </div>
+
+            <h3>返信について</h3>
+            <p>お問い合わせいただいた内容については、通常2〜3営業日以内に返信いたします。お急ぎの場合でも、できる限り迅速に対応いたしますので、ご了承ください。</p>
+        </div>
+
+        <div class="card">
+            <h2>機能リクエスト・フィードバック</h2>
+            <p>Quick Money Memoをより良いアプリにするため、皆様からのご意見やご要望をお待ちしております。新機能のアイデアや改善提案がございましたら、お気軽にお問い合わせください。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Quick Money Memo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

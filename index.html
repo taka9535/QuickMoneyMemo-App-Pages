@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Money Memo - ホーム</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #764ba2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            background: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💰 Quick Money Memo</h1>
+        <p>シンプルで使いやすい支出管理アプリ</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="terms.html">利用規約</a></li>
+            <li><a href="support.html">サポート</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Quick Money Memoについて</h2>
+            <p>Quick Money Memoは、日々の支出を素早く簡単に記録できるiOSアプリです。</p>
+            <br>
+            <h3>主な機能</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>シンプルな入力画面で素早く記録</li>
+                <li>カスタマイズ可能なタグで支出を分類</li>
+                <li>月別の統計とグラフで支出を可視化</li>
+                <li>複数の通貨に対応</li>
+                <li>ライト・ダークモード対応</li>
+                <li>プレミアム機能（広告非表示、アプリロック）</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>お問い合わせ</h2>
+            <p>ご質問やサポートが必要な場合は、<a href="support.html" style="color: #667eea;">サポートページ</a>をご覧ください。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Quick Money Memo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
